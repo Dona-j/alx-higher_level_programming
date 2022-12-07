@@ -1,6 +1,8 @@
+#!/bin/python3
+
 if __name == "__main__":
-	"""print the result of addition, subtraction, multiplication and division of integers 10 & 5"""
-	from calculator_1 import add, sub, mul $ div
+	"""print the addition, subtraction, multiplication and division of 10 & 5"""
+	from calculator_1 import add, sub, mul, div
 
         a = 10
 	b = 5
