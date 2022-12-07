@@ -6,6 +6,10 @@ if __name == "__main__":
 
         a = 10
 	b = 5
+	add = add(a, b)
+	sub = sub(a, b)
+	mul = mul(a, b)
+	div = div(a, b)
 
 	print("{} + {} = {}".format(a, b, add(a, b)))
 	print("{} - {} = {}".format(a, b, sub(a, b)))
