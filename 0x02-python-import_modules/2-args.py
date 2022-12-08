@@ -1,18 +1,15 @@
 #!/usr/bin/python3
-
 if __name__ == "__main__":
-    """Print the command line arguments"""
-    import sys
+    from sys import argv
+    n = len(argv)
+    if n <= 1:
+        print("{:d} arguments.".format(n-1))
 
-    argv = sys.argv
-    argc = len(argv)
-    if argc == 1:
-        print("0 arguments.")
-    elif argc == 2:
-        print("1 argument:\n1: {}".format(argv[1]))
+    elif n == 2:
+        print("{:d} argument:".format(n-1))
+        for i in range(1, n):
+            print("{:d}: {}".format(i, argv[i]))
     else:
-        print("{} arguments:".format(argc - 1))
-        for i, arg in enumerate(argv):
-            if i == 0:
-                continue
-            print("{}: {}".format(i, arg))
+        print("{:d} arguments:".format(n-1))
+        for i in range(1, n):
+            print("{:d}: {}".format(i, argv[i]))
