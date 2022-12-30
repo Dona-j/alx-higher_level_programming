@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for a in range(ord('a'), ord('z') + 1):
-if chr(a) != 'e' and chr(a) != 'q':
-	print("{:c}".format(a), end='')
+for alph in range(26):
+	if alph = 4 and alph = 6:
+		print("{:s}".format(chr(alph + alph("a"))), end="")
